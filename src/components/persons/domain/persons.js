@@ -8,7 +8,7 @@ export const userIdSchema = Joi.object({
 })
 */
 
-export const createNoteSchema = Joi.object({
+export const createPersonSchema = Joi.object({
   name: Joi.string().required(),
   number: Joi.string().required()
 })
