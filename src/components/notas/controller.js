@@ -28,6 +28,7 @@ export const obtenerNotas = async (_, res, next) => {
  * @param {import('express').NextFunction} next
  */
 export const crearNota = async (req, res, next) => {
+  console.log(req)
   try {
     const query = CrearNota({ NotaRepository })
     const nota = await query(req.body)

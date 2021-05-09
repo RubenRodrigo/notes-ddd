@@ -3,11 +3,10 @@
  * @param {import('../infraestructure/MongoNotaRepository')} obj.NotaRepository
  */
 export default ({ NotaRepository }) => {
-  return async ({ descripcion }) => {
+  return async ({ name, number }) => {
     const nuevaNota = {
-      content: descripcion,
-      important: false,
-      date: new Date().toISOString()
+      name: name,
+      number: number
     }
     return await NotaRepository.add(nuevaNota)
   }
