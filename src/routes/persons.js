@@ -8,7 +8,8 @@ import { newPerson, getAllPerson } from '../components/persons/controller'
 const router = express.Router()
 
 router.get('/', async (_, response, next) => {
-  response.send('<h1>Hello World!</h1>')
+  // response.send('<h1>Hello World!</h1>')
+  response.send('<h1>Hola Mundo!</h1>')
 })
 
 router.get('/api/persons', getAllPerson)
